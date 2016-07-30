@@ -14,6 +14,7 @@ ReactDOM.render(
 
 if (module.hot) {
   module.hot.accept('./Root', () => {
+    // eslint-disable-next-line no-shadow, global-require
     const Root = require('./Root').default;
     ReactDOM.render(
       <AppContainer>

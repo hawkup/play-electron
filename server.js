@@ -8,8 +8,9 @@ new WebpackDevServer(webpack(config), {
   historyApiFallback: true,
 }).listen(3000, 'localhost', (err) => {
   if (err) {
+    // eslint-disable-next-line no-console
     console.log(err);
   }
-
+  // eslint-disable-next-line no-console
   console.log('Listening at http://localhost:3000/');
-})
+});
