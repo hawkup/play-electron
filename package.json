@@ -1,0 +1,11 @@
+{
+  "name": "play-electron",
+  "version": "0.1.0",
+  "description": "play electron and others",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hawkup",
+  "license": "MIT"
+}
