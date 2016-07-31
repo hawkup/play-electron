@@ -1,16 +1,10 @@
-const counter = (state = { count: 0 }, action) => {
-  switch (action.type) {
-    case 'UP':
-      return {
-        count: state.count + 1,
-      };
-    case 'DOWN':
-      return {
-        count: state.count - 1,
-      };
-    default:
-      return state;
-  }
-};
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
+import counter from './counter';
 
-export default counter;
+const rootReducer = combineReducers({
+  counter,
+  routing: routerReducer,
+});
+
+export default rootReducer;

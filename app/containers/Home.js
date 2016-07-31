@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { up, down } from '../actions';
-import Counter from './Counter';
+import Counter from '../components/Counter';
 
 const mapStateToProps = (state) => (
   {
-    count: state.count,
+    count: state.counter.count,
   }
 );
 
@@ -19,9 +19,9 @@ const mapDispatchToProps = (dispatch) => (
   }
 );
 
-const App = connect(
+const Home = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter);
 
-export default App;
+export default Home;
